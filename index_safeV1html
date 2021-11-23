@@ -48,19 +48,13 @@
           <div class="col col2">
             <div><img id="logo1" src="./images/DR4Ylogo.png" alt="DJ-DR4Y-Logo"></div>
           </div>
-          <!-- <div id="counter">
-            <h7>{{ phrase1 }}<br> {{ date }} <br>Connecté depuis = {{ counter }} secondes</h7>
-          </div> -->
-          <!-- <div id="counter"></div> -->
           <h1> DJ-DR4Y</h1>
 
           <p> — Bienvenue sur mon site!</p>
-          <div id="audio1">
-            <div>
-              <p>Jouer un extrait musical</p>
-              <hr>
-            </div>
-
+          <div>
+            <p>Jouer un extrait musical</p>
+          </div>
+          <div>
             <p><button class="btn-jouer">Jouer</button></p>
           </div>
 
@@ -243,8 +237,50 @@
             <hr>
           </div>
 
-          <!-- VCARD-DR4Y -->
 
+          <!-- VCARD-DR4Y -->
+          <aside id="vcard-dr4y">
+            <div class="vcard-mask">
+              <div class="vcard">
+                <img class="front-image" src="./images/dr4y-001/DR4Y_ORAGEUS_aout2020_tunnel.png">
+                <div class="infos-supplementaires">
+                  <div class="galerie-photo">
+                    <!-- JS: Liste d'images ici-->
+                  </div>
+                  <div id="vcard" class="infos">
+                    <div class="nom">
+                      <span class="titre-vcard">Nom: </span>
+                      <span class="valeur">
+                        <!-- JS: nom -->
+                        {{ nom }}
+                      </span>
+                    </div>
+                    <div class="profession">
+                      <span class="titre-vcard">Profession: </span>
+                      <span class="valeur">
+                        <!-- JS: profession -->
+                        {{ job }}
+                      </span>
+                    </div>
+                    <div class="transport">
+                      <span class="titre-vcard">Moyen de transport: </span>
+                      <span class="valeur">
+                        <!-- JS: moyen de transport -->
+                        {{ transport }}
+                      </span>
+                    </div>
+                    <div class="phrase">
+                      <span class="titre-vcard">Phrase préférée: </span>
+                      <span class="valeur">
+                        <!-- JS: phrase préféré -->
+                        {{ phrase }}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
 
 
           <!-- ======================= -->
@@ -312,11 +348,11 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <hr>
-            <!-- <h3>7- Vcard DJ-DR4Y: Imagerie 3D :</h3>
+            <h3>7- Vcard DJ-DR4Y: Imagerie 3D :</h3>
             <hr>
             <iframe id="web-link" src="https://8368575.cpsw-fcsei.com/dr4y-vcard/vcard.html" title="Vcard 4 Dj-Dr4y"
-              frameborder="0"></iframe>
-            <hr> -->
+              frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <hr>
           </div>
         </section>
         <blockquote>
@@ -326,33 +362,25 @@
     </div>
     <footer>
       <section>
-        <h3> - Liens utiles : Me rejoindre sur les médias sociaux</h3>
+        <h3> - Liens utiles :</h3>
         <hr>
 
         <div class="row3">
-          <div></div>
-          <div></div>
           <div>
-            <a href="https://www.facebook.com/professor.andre.guay/" target="popup"
-              onclick="window.open('https://www.facebook.com/professor.andre.guay','name','width=800,height=600')"><img
-                id="icons" src="icons/facebook.svg" alt=""></a>
+            <a href="https://www.facebook.com/professor.andre.guay/"><img id="icons" src="icons/facebook.svg"
+                alt=""></a>
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/professorag/" target="popup"
-              onclick="window.open('https://www.linkedin.com/in/professorag','name','width=800,height=600')"><img
-                id="icons" src="icons/linkedin.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/professorag/"><img id="icons" src="icons/linkedin.svg" alt=""></a>
           </div>
           <div>
-            <a href="https://www.twitter.com/ag_professor/" target="popup"
-              onclick="window.open('https://www.twitter.com/ag_professor','name','width=800,height=600')"><img
-                id="icons" src="icons/twitter.svg" alt=""></a>
+            <a href="https://www.instagram.com/djdr4y/"><img id="icons" src="icons/twitter.svg" alt=""></a>
           </div>
           <div>
-            <a href="https://www.youtube.com/channel/UCW2NpFXLjEpFPzA04HcaEvQ" target="popup"
-              onclick="window.open('https://www.youtube.com/channel/UCW2NpFXLjEpFPzA04HcaEvQ','name','width=800,height=600')"><img
-                id="icons" src="icons/youtube.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCW2NpFXLjEpFPzA04HcaEvQ"><img id="icons" src="icons/youtube.svg"
+                alt=""></a>
           </div>
-          <!-- <div>
+          <div>
             <img id="icons" src="icons/github.svg" alt="">
           </div>
           <div>
@@ -369,9 +397,7 @@
           </div>
           <div>
             <img id="icons" src="icons/mysql.svg" alt="">
-          </div> -->
-          <div></div>
-          <div></div>
+          </div>
         </div>
       </section>
     </footer>

@@ -20,97 +20,80 @@ import atmosphereFragmentShader from '../shaders/atmosphereFragment.glsl'
  */
 
 
-const Counter = {
-  data() {
-    return {
-      counter: 0,
-      phrase1: "Allô !",
-      date: `Dernière connexion : ${new Date().toLocaleString()}`
-    }
-  },
-  mounted() {
-    this.phrase1
-    setInterval(() => {
-      this.counter++
-    }, 1000)
-  },
-}
-
-Vue.createApp(Counter).mount("#counter")
-
-
-let menu = false
-let img_clic = document.querySelector(".front-image")
-img_clic.addEventListener("click", e => {
-  e.preventDefault()
-  if (menu == false) {
-    let menu_ouvrir = document.querySelector(".vcard-mask")
-    menu_ouvrir.classList.add("ouvert")
-    menu = true
-  } else if (menu == true) {
-    let menu_ouvrir = document.querySelector(".vcard-mask")
-    menu_ouvrir.classList.remove("ouvert")
-    menu = false
-  }
-})
-
-// // let url = "images_dr4y.json"
-let url = "data/images.php"
-
-// console.log(url)
-fetch(url).then(reponse => {
-  reponse.json().then(images => {
-    let select_galerie = document.querySelector(".galerie-photo")
-    for (let url_image of images) {
-      let balise_img = document.createElement("img")
-      select_galerie.appendChild(balise_img)
-      balise_img.setAttribute("src", "images/dr4y-001/" + url_image)
-      balise_img.setAttribute("alt", "images/dr4y-001/" + url_image)
-      balise_img.addEventListener("click", e => {
-        e.preventDefault()
-        let photo = document.querySelector(".front-image")
-        photo.setAttribute("src", "images/dr4y-001/" + url_image)
-      })
-    }
-  })
-})
-
-// fetch("data/images.php").then(resp => {
-//   resp.json().then(images => {
-
-//     for (let url_image of images) {
-
-//       let balise_img = document.createElement("img")
-//       document.body.appendChild(balise_img)
-//       balise_img.setAttribute("src", "images/" + url_image)
+// const Counter = {
+//   data() {
+//     return {
+//       counter: 0,
+//       phrase1: "Allô !",
+//       date: `Dernière connexion : ${new Date().toLocaleString()}`
 //     }
-//     // console.log(images)
+//   },
+//   mounted() {
+//     this.phrase1
+//     setInterval(() => {
+//       this.counter++
+//     }, 1000)
+//   },
+// }
+
+// Vue.createApp(Counter).mount("#counter")
+
+
+// let menu = false
+// let img_clic = document.querySelector(".front-image")
+// img_clic.addEventListener("click", e => {
+//   e.preventDefault()
+//   if (menu == false) {
+//     let menu_ouvrir = document.querySelector(".vcard-mask")
+//     menu_ouvrir.classList.add("ouvert")
+//     menu = true
+//   } else if (menu == true) {
+//     let menu_ouvrir = document.querySelector(".vcard-mask")
+//     menu_ouvrir.classList.remove("ouvert")
+//     menu = false
+//   }
+// })
+
+// // // let url = "images_dr4y.json"
+// let url = "data/images.php"
+
+// // console.log(url)
+// fetch(url).then(reponse => {
+//   reponse.json().then(images => {
+//     let select_galerie = document.querySelector(".galerie-photo")
+//     for (let url_image of images) {
+//       let balise_img = document.createElement("img")
+//       select_galerie.appendChild(balise_img)
+//       balise_img.setAttribute("src", "images/dr4y-001/" + url_image)
+//       balise_img.setAttribute("alt", "images/dr4y-001/" + url_image)
+//       balise_img.addEventListener("click", e => {
+//         e.preventDefault()
+//         let photo = document.querySelector(".front-image")
+//         photo.setAttribute("src", "images/dr4y-001/" + url_image)
+//       })
+//     }
 //   })
 // })
 
-// Vcard vue.js
 
+// const Vcard = {
+//   data() {
+//     return {
+//       nom: "DJ-DR4Y",
+//       job: "VJ & DJ",
+//       transport: "ËON vaisseau",
+//       phrase: "Au delà des limites!",
+//     }
+//   },
+//   mounted() {
+//     this.nom
+//     this.job
+//     this.transport
+//     this.phrase
+//   },
+// }
 
-
-
-const Vcard = {
-  data() {
-    return {
-      nom: "DJ-DR4Y",
-      job: "VJ & DJ",
-      transport: "ËON vaisseau",
-      phrase: "Au delà des limites!",
-    }
-  },
-  mounted() {
-    this.nom
-    this.job
-    this.transport
-    this.phrase
-  },
-}
-
-Vue.createApp(Vcard).mount("#vcard")
+// Vue.createApp(Vcard).mount("#vcard")
 
 // Setup
 
