@@ -19,6 +19,26 @@ import atmosphereFragmentShader from '../shaders/atmosphereFragment.glsl'
  * @param
  */
 
+
+const Counter = {
+  data() {
+    return {
+      counter: 0,
+      phrase1: "Allô !",
+      date: `Dernière connexion : ${new Date().toLocaleString()}`
+    }
+  },
+  mounted() {
+    this.phrase1
+    setInterval(() => {
+      this.counter++
+    }, 1000)
+  },
+}
+
+Vue.createApp(Counter).mount("#counter")
+
+
 let menu = false
 let img_clic = document.querySelector(".front-image")
 img_clic.addEventListener("click", e => {
@@ -70,23 +90,7 @@ fetch(url).then(reponse => {
 
 // Vcard vue.js
 
-const Counter = {
-  data() {
-    return {
-      counter: 0,
-      phrase1: "Allô !",
-      date: `Dernière connexion : ${new Date().toLocaleString()}`
-    }
-  },
-  mounted() {
-    this.phrase1
-    setInterval(() => {
-      this.counter++
-    }, 1000)
-  },
-}
 
-Vue.createApp(Counter).mount("#counter")
 
 
 const Vcard = {
