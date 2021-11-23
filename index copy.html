@@ -3,144 +3,408 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" /> -->
+  <link rel="icon" type="image" href="./images/dr4y_logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DR4Y Website</title>
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/jmk3xov.css"> -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>DJ-DR4Y Site -Officiel</title>
 </head>
 
 <body>
-
   <canvas id="bg"></canvas>
 
-  <main>
-
-    <header>
-      <h1>DJ-DR4Y</h1>
-      <p>🚀 Bienvenue sur mon site!</p>
-    </header>
-
-
-    <blockquote>
-      <p>Art & technologies</p>
-    </blockquote>
-
-    <section>
-      <h2>📜 — DJ-DR4Y</h2>
-      <h1>Quand nous donnons <em>"vie"</em> aux applications que vous avez imaginez!</h1>
-      <p>Vous avez une idée géniale à diffuser,
-        nous pouvons vous aider.</p>
-      <h2>Le Client</h2>
-
-      <p class="text-left">Le fil conducteur est donné par une démarche créative adaptée à vos critères, idées
-        et but.</p>
-
-      <h2>Notre Mission</h2>
-      <p class="text-left">Les moyens employés vous permettront de communiquer avec
-        votre
-        public cible.</p>
-
-    </section>
-
-    <section class="light">
-      <div class="callout">
-        <h3>Soyons interactifs!</h3>
-        <p>Cet évènement numérique peut-être aussi participatif et se décliner en
-          différente approche.</p>
+  <main class="clearfix">
+    <div class="row row1">
+      <div class="col col1">
+        <nav class="navigation">
+          <div class="nav-menu">
+            <div class="titre">
+              <h5>DJ-DR4Y</h5>
+            </div>
+            <hr>
+            <div class="nav-items"><a href="#">ACCUEIL</a></div>
+            <div class="nav-items"><a href="#clients">PROJETS</a></div>
+            <div class="nav-items"><a href="#services">SERVICES</a></div>
+            <div class="nav-items"><a href="#aptitude">APTITUDES</a></div>
+          </div>
+        </nav>
+        <nav class="navigation2">
+          <div class="nav-menu">
+            <div class="titre">
+              <h5>ORAGEUS</h5>
+            </div>
+            <hr>
+            <div class="nav-items"><a href="#orageus">LE PROJET</a></div>
+            <div class="nav-items"><a href="#extraits">EXTRAITS</a></div>
+            <div class="nav-items"><a href="#videos">VIDÉOS</a></div>
+            <!-- <div class="nav-items"><a href="#liens">LIENS</a></div> -->
+          </div>
+        </nav>
       </div>
+      <div class="container">
+        <header>
 
-      <h2>🏆 Réalisations</h2>
-      <ul>
-        <li>Les Sphères Polaires -installation extérieure hivernale-, ouverture officielle
-          du
-          Quartier des
-          Spectacles de Montréal.</li>
-        <li>Pour le salon technologique C2mtl 2012, création et installation d’une fresque
-          interactive sans
-          latence sonore.
-          Les spectateurs deviennent metteur en scène et chef d’orchestre à la fois.</li>
-        <li>Avec Electrik Box composition, réalisation de six musiques et assistance à la
-          conception
-          pour leur
-          application
-          iPhone Kilorun.
-        </li>
-      </ul>
+          <div class="col col2">
+            <div><img id="logo1" src="./images/DR4Ylogo.png" alt="DJ-DR4Y-Logo"></div>
+          </div>
+          <h1> DJ-DR4Y</h1>
 
-    </section>
-
-    <blockquote>
-      <p>Suivre son chemin sans douter un seul instant! <br>-Un grand sage</p>
-    </blockquote>
-
-    <section class="left">
-      <h2>🌮 Compétences</h2>
-
-      <h3>Logiciels connus :</h3>
-      <p>
-        Ableton LIVE, Nuendo -Cubase-, Logic, Photoshop, Cinéma 4D, After
-        Effects, etc.
-        -MAC-PC-LINUX-</p>
-      <h3>Comme musicien, compositeur et
-        directeur
-        musical:</h3>
-      <ul>
-        <li>Musique de films «Jeux dangereux» pour l’Office National du Film -ONF-</li>
-        <li>Comédie musical «À l’eau» pour l’événement Québec 84 et représentation à
-          Montréal
-        </li>
-        <li>Disque pour des artistes de la relève Québécoise</li>
-        <li>Show 150iem du Lac St-Jean, avec un orchestre symphonique et un choeur devant
-          sept
-          milles
-          spectateurs</li>
-        <li>Spectacles au Québec, USA, Nouveau-Brunswick, Ontario etc.</li>
-      </ul>
-      <p>
-
-      </p>
-      <h3>Chef d’orchestre, directeur musical,
-        guitariste, et
-        programmeur.</h3>
-      <ul>
-        <li>Pour l’artiste Erika</li>
-        <li>Pour des artistes du Québec tel que Sylvie Bernard -Show TV sur PBS au USA,
-          tournée
-          provinciale-,
-          Robert Leroux, Renée Claude, etc.</li>
-        <li>
-          Pour des soirées corporatives : Paul Desmarais, YPO, Canadair, Bombardier,
-          Armand
-          Frappier, CIBC,
-          Heinz, Casino de Hull, British Airways, etc.</li>
-        <li>Pour des albums POP</li>
-      </ul>
-
-    </section>
-
-    <blockquote>
-      <p>Merci de prêter attention!</p>
-    </blockquote>
+          <p> — Bienvenue sur mon site!</p>
+          <div>
+            <p>Jouer un extrait musical</p>
+          </div>
+          <div>
+            <p><button class="btn-jouer">Jouer</button></p>
+          </div>
 
 
+          <hr>
+          <div id="conteneur_chargement">
+            <div id="chargement"></div>
+          </div>
+
+
+          <adress class="divers">
+            <div>
+              <div>
+                <h1>Contact:</h1>
+              </div>
+              <div>
+                <p>Cel: 514 885-5557</p>
+              </div>
+              <div>
+                <p>djdr4y@gmail.com</p>
+              </div>
+            </div>
+          </adress>
+        </header>
+        <blockquote id="clients">
+          <p>Arts & technologies</p>
+        </blockquote>
+        <section>
+          <div class="callout">
+            <h2>Soyons interactifs!</h2>
+            <p>
+            <h4>Cet évènement numérique peut-être aussi participatif et se décliner en
+              différente approche.</h4>
+            </p>
+            <hr>
+          </div>
+
+          <h2> — Réalisations</h2>
+          <hr>
+          <ul>
+            <li>Les Sphères Polaires -installation extérieure hivernale-, ouverture officielle
+              du
+              Quartier des
+              Spectacles de Montréal.
+            </li>
+            <li>Pour le salon technologique C2mtl 2012, création et installation d’une fresque
+              interactive sans
+              latence sonore.
+              Les spectateurs deviennent metteur en scène et chef d’orchestre à la fois.
+            </li>
+            <li>Avec Electrik Box composition, réalisation de six musiques et assistance à la
+              conception
+              pour leur
+              application
+              iPhone Kilorun.
+            </li>
+            <li>ORAGEUS -lancement de la campagne de promotion-, tournage immersif
+              avec la SPAG et à la réputé salle
+              de spectacle de Montréal Bain Mathieu.
+            </li>
+          </ul>
+
+        </section>
+
+        <section id="services">
+          <h2> — DJ-DR4Y</h2>
+          <h4>Quand nous donnons <em>"vie"</em> aux applications que vous avez imaginez!</h4>
+          <hr>
+          <p>Vous avez une idée géniale à diffuser,
+            nous pouvons vous aider.</p>
+          <hr>
+          <h2> — Le Client</h2>
+
+          <p>Le fil conducteur est donné par une démarche créative adaptée à vos critères, idées
+            et but.</p>
+
+          <h2> — Notre Mission</h2>
+          <p>Les moyens employés vous permettront de communiquer avec
+            votre public cible.</p>
+
+        </section>
+
+        <blockquote>
+          <p>Au-delà de toutes les limites!</p>
+        </blockquote>
+
+        <section id="aptitude">
+          <h2> — Compétences</h2>
+          <hr>
+          <h3>Logiciels && Langages connus :</h3>
+          <p>
+            Visual Code, THREE.js, Javascript, CSS, HTML5, MIDI, PHP, Ableton LIVE, Nuendo -Cubase-, Logic, Photoshop,
+            Cinéma 4D, After
+            Effects, etc.
+            -MAC-PC-LINUX-</p>
+          <hr>
+          <h3>Comme musicien, compositeur et
+            directeur
+            musical:</h3>
+          <hr>
+          <ul>
+            <li>Musique de films «Jeux dangereux» pour l’Office National du Film -ONF-</li>
+            <li>Comédie musical «À l’eau» pour l’événement Québec 84 et ses représentations à
+              Montréal
+            </li>
+            <li>Disque pour des artistes de la relève Québécoise</li>
+            <li>Show 150iem du Lac St-Jean, avec un orchestre symphonique et un choeur devant
+              sept
+              milles
+              spectateurs</li>
+            <li>Spectacles au Québec, USA, Nouveau-Brunswick, Ontario etc.</li>
+          </ul>
+          <p>
+
+          </p>
+          <hr>
+          <h3>Chef d’orchestre, directeur musical,
+            guitariste, et
+            programmeur.</h3>
+          <hr>
+          <ul>
+
+            <li>
+              Pour des soirées corporatives : Paul Desmarais, YPO, Canadair, Bombardier,
+              Armand
+              Frappier, CIBC,
+              Heinz, Casino de Hull, British Airways, etc.</li>
+          </ul>
+          <h3>Pour des albums POP partout sur la planète</h3>
+          <ul>
+            <li>Pour l’artiste Thea Austin</li>
+            <li>Pour l’artiste Charito</li>
+            <li>Pour l’artiste Raphael Derkson</li>
+            <li>Pour des artistes du Québec tel que Sylvie Bernard -Show TV sur PBS au USA,
+              tournée
+              provinciale-,
+              Robert Leroux, Renée Claude, etc.</li>
+            <li>Pour l’artiste Erika</li>
+            <li>Pour l’artiste Sylvie Paquette</li>
+
+          </ul>
+
+        </section>
+
+        <section id="orageus">
+          <img src="./images/orageus_ship.png" alt="DJ-DR4Y-Logo">
+          <h1>ORAGEUS</h1>
+          <hr>
+          <p> — ORAGEUS: Un Monde Immersif!</p>
+        </section>
+        <section>
+          <h2> — ORAGEUS</h2>
+          <h4>Musiques et images immersives Sci-Fi. Un moment exclusif en temps réel</h4>
+          <hr>
+          <p>Un projet musical ludique, multilingue et multigénérationnel axé sur la danse, qui va d’ambiances
+            électroniques hybrides, jusqu’à des musiques House et Lounge à votre convenance. Basé sur une histoire
+            originale de science-fiction</p>
+          <hr>
+          <h2> — Immersion totale</h2>
+
+          <p>Le projet inclut des images immersives VR ainsi que des vidéos diffusées lors des événements.</p>
+
+          <h2> — Les faits</h2>
+          <p>Tout cela basé sur une histoire de science fiction originale qui cherche à découvrir d’où nous venons.
+          </p>
+
+        </section>
+
+        <blockquote>
+          <p>Aider nous à lancer le projet!</p>
+        </blockquote>
+
+        <section id="extraits">
+          <div class="left">
+            <h2>Créons donc ensemble une nouvelle planète!</h2>
+            <hr>
+            <p>Nous croyons que notre monde est originaire d’une planète lointaine et représente la suite et la
+              répétition
+              de nos erreurs passées.</p>
+            <hr>
+          </div>
+
+
+          <!-- VCARD-DR4Y -->
+          <aside id="vcard-dr4y">
+            <div class="vcard-mask">
+              <div class="vcard">
+                <img class="front-image" src="./images/dr4y-001/DR4Y_ORAGEUS_aout2020_tunnel.png">
+                <div class="infos-supplementaires">
+                  <div class="galerie-photo">
+                    <!-- JS: Liste d'images ici-->
+                  </div>
+                  <div id="vcard" class="infos">
+                    <div class="nom">
+                      <span class="titre-vcard">Nom: </span>
+                      <span class="valeur">
+                        <!-- JS: nom -->
+                        {{ nom }}
+                      </span>
+                    </div>
+                    <div class="profession">
+                      <span class="titre-vcard">Profession: </span>
+                      <span class="valeur">
+                        <!-- JS: profession -->
+                        {{ job }}
+                      </span>
+                    </div>
+                    <div class="transport">
+                      <span class="titre-vcard">Moyen de transport: </span>
+                      <span class="valeur">
+                        <!-- JS: moyen de transport -->
+                        {{ transport }}
+                      </span>
+                    </div>
+                    <div class="phrase">
+                      <span class="titre-vcard">Phrase préférée: </span>
+                      <span class="valeur">
+                        <!-- JS: phrase préféré -->
+                        {{ phrase }}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+
+          <!-- ======================= -->
+          <hr>
+          <h2> — Extraits du spectacle à venir</h2>
+          <hr>
+          <ul>
+            <li>ORAGEUS -Les dons en ligne sont plus sécurisés que jamais, pratiques et sans contrainte, en un seul
+              clic.
+              Nous acceptons aussi les dons en espèces et par chèque dans toutes nos antennes.</li>
+            <li>Vous pouvez vous investir dès aujourd’hui en devenant un créateur de contenu. Inscrivez-vous et vous
+              rejoindrez un groupe d’acteurs du changement, un réseau suffisamment solide pour changer positivement la
+              poursuite et l’avenir du projet.</li>
+            <li>Votre participation financière aidera les créateurs à continuer à collaborer et définir le futur du
+              projet
+              .
+              Vous pouvez faire une différence aujourd’hui en vous engageant.</li>
+          </ul>
+
+        </section>
+        <blockquote>
+          <p>Un spectacle festif et inclusif!</p>
+        </blockquote>
+
+        <section>
+          <div id="wrap">
+            <h2 id="videos"> — Vidéos</h2>
+            <hr>
+            <h3>1- Un extrait de la première vidéo officielle à venir :</h3>
+            <hr>
+            <iframe src="https://www.youtube.com/embed/jpFWh5d1N6A" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <hr>
+            <h3>2- La performance complète filmée en VR :</h3>
+            <hr>
+            <iframe src="https://www.youtube.com/embed/YI7PEwMJTeA" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <hr>
+            <h3>3- Motion Design, Music & 3D (TEASER) :</h3>
+            <hr>
+            <iframe src="https://www.youtube.com/embed/5uk0BZ6geto" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <hr>
+
+            <h3>- Conception et installation de projet immersif :</h3>
+            <hr>
+            <h3>4- C2mtl avec Lucion Media:</h3>
+
+            <iframe src="https://www.youtube.com/embed/0i81htNX7vk" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <hr>
+            <h3>5- Halloween 2018 à Val-David, Le Triangle des Bermudas.:</h3>
+            <hr>
+            <iframe src="https://www.youtube.com/embed/DAz_LiRberU" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <hr>
+            <h3>6- DJ-DR4Y Soirées corporatives (TEASER) :</h3>
+            <hr>
+            <iframe src="https://www.youtube.com/embed/0PxUrbxvgU8" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <hr>
+            <h3>7- Vcard DJ-DR4Y: Imagerie 3D :</h3>
+            <hr>
+            <iframe id="web-link" src="https://8368575.cpsw-fcsei.com/dr4y-vcard/vcard.html" title="Vcard 4 Dj-Dr4y"
+              frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+          </div>
+        </section>
+        <blockquote>
+          <p>Aurevoir!</p>
+        </blockquote>
+      </div>
+    </div>
+    <footer>
+      <section>
+        <h3> - Liens utiles :</h3>
+        <hr>
+
+        <div class="row3">
+          <div>
+            <a href="https://www.facebook.com/professor.andre.guay/"><img id="icons" src="icons/facebook.svg"
+                alt=""></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/professorag/"><img id="icons" src="icons/linkedin.svg" alt=""></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/djdr4y/"><img id="icons" src="icons/twitter.svg" alt=""></a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/channel/UCW2NpFXLjEpFPzA04HcaEvQ"><img id="icons" src="icons/youtube.svg"
+                alt=""></a>
+          </div>
+          <div>
+            <img id="icons" src="icons/github.svg" alt="">
+          </div>
+          <div>
+            <img id="icons" src="icons/javascript.svg" alt="">
+          </div>
+          <div>
+            <img id="icons" src="icons/html5.svg" alt="">
+          </div>
+          <div>
+            <img id="icons" src="icons/json.svg" alt="">
+          </div>
+          <div>
+            <img id="icons" src="icons/php.svg" alt="">
+          </div>
+          <div>
+            <img id="icons" src="icons/mysql.svg" alt="">
+          </div>
+        </div>
+      </section>
+    </footer>
   </main>
-
-  <script type="module" src="/main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="./js/utils.js"></script>
+  <script type="module" src="./js/main.js"></script>
 
 </body>
 
